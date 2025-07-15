@@ -2,3 +2,18 @@
   border-color: #e5e5e5;
 }
 
+.light .logo {
+  background-image: url(/app/assets/logo-light.svg);
+}
+
+.light .main-menu a {
+    color: #777;
+}
+
+.light .main-menu li.active a {
+    color: var(--body-color);
+}
+
+.light .icon-font-light::before {
+  content: '\E802';
+}

@@ -5,8 +5,100 @@
   height: var(--top-line-height);
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
-  
+  width: 110px;
+  height: 12px;
+  background-image: url(/app/assets/logo.svg);
+}
+
+
+.main-menu {
+  display: flex;
+  align-items: center;
+}
+.main-menu ul,
+.main-menu li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-right: 5px;
+  background-color: var(--body-bg);
+}
+.main-menu ul {
+  padding-right: 0;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: opacity .3s ease, transform .3s ease, visibility .3s ease;
+  z-index: 1;
+}
+.main-menu ul.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+}
+.main-menu li {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: .8px;
+}
+.main-menu a {
+  display: block;
+  padding: 5px 30px;
+  text-decoration: none;
+  color: var(--menu-btn-color);
+  transition: color .3s ease;
+}
+.main-menu a:hover {
+  color: var(--active-color);
+}
+.main-menu li.active a {
+  color: var(--active-color);
+}
+
+.menu-btn {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-right: -10px;
+}
+.menu-btn * {
+  width: 17px;
+  height: 2px;
+  background-color: var(--menu-btn-color);
+}
+.menu-btn.active {
+  align-items: end;
+}
+.menu-btn *:first-child {
+  width: 13px;
+}
+.menu-btn *:nth-child(2) {
+  width: 11px;
+}
+.menu-btn *:last-child {
+  width: 17px;
+}
+
+
+.toggler {
+  position: relative;
+  right: 16px;
+}
+
+[class^="icon-font-"] {
+  font-style: normal;
+  font-family: 'icon-font';
+  cursor: pointer;
+  color: var(--menu-btn-color);
+}
+
+.icon-font-light::before {
+  content: '\E801';
 }

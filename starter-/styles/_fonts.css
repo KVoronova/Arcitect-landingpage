@@ -41,3 +41,9 @@
   font-weight: 700;
   font-style: normal;
 }
+
+
+@font-face {
+  font-family: 'icon-font';
+  src: url('/app/design/fonts/web/fontello.woff2') format('woff2');
+}
