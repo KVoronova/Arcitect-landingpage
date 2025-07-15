@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'raleway-d';
+  src: url('/app/design/fonts/web/raleway-300.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'raleway-d';
+  src: url('/app/design/fonts/web/raleway-300i.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'raleway-d';
+  src: url('/app/design/fonts/web/raleway-400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'raleway-d';
+  src: url('/app/design/fonts/web/raleway-500.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'raleway-d';
+  src: url('/app/design/fonts/web/raleway-600.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'raleway-d';
+  src: url('/app/design/fonts/web/raleway-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}

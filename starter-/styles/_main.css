@@ -1,0 +1,12 @@
+.top-line {
+  border-bottom: 2px solid #28292E;
+}
+.top-line__content {
+  height: var(--top-line-height);
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  
+}
